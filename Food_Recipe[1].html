@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Meal For Your Ingredients</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="meal-wrapper">
+            <div class="meal-search">
+                <img src="https://res.cloudinary.com/dv5lcy4na/image/upload/v1723810873/pngtree-3d-illustration-man-in-chef-uniform-png-image_12842419-removebg-preview_hcgube.png" alt="chef-img" class="image" />
+                <h2 class="title">No Waste, Just Taste — Let's Cook with What’s on Hand🥣</h2>
+                <blockquote>"The secret of good cooking is, first, having a love of it."<br>
+                    <cite>- James Beard</cite>
+                </blockquote>
+
+                <div class="meal-search-box">
+                    <input type="text" class="search-control" placeholder="Enter an ingredient you have😋" id="search-input">
+                    <button type="submit" class="search-btn btn" id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="meal-result">
+                <h2 class="title" id="loading">Your Results Will Appear Here📍</h2>
+                <div id="meal">
+                    <!-- meal item -->
+                    <!-- <div class = "meal-item">
+            <div class = "meal-img">
+              <img src = "food.jpg" alt = "food">
+            </div>
+            <div class = "meal-name">
+              <h3>Potato Chips</h3>
+              <a href = "#" class = "recipe-btn">Get Recipe</a>
+            </div>
+          </div> -->
+                    <!-- end of meal item -->
+                </div>
+            </div>
+
+            <div class="meal-details">
+                <!-- recipe close btn -->
+                <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <!-- meal content -->
+                <div class="meal-details-content">
+                    <!-- Content will be dynamically added here -->
+                </div>
+            </div>
+        </div>
+        <!-- Saved Recipes Section -->
+        <!-- Saved Recipes Section -->
+        <div id="saved-meals" class="saved-recipes">
+            <h2 class="title">Your Saved Recipes</h2>
+            <div class="saved-recipes-content">
+                <!-- Saved recipes will be displayed here -->
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
